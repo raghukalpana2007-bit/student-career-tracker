@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Career & Placement Tracker</title>
+<style>
+body{font-family:Arial;background:#f0f2f5;padding:20px}
+h1{color:#1a73e8;text-align:center;background:white;padding:20px;border-radius:10px}
+h2{color:#333;border-bottom:3px solid #1a73e8;padding-bottom:5px}
+ul{padding:0}ul li{background:#e8f0fe;margin:8px 0;padding:12px;border-radius:6px;list-style:none;border-left:5px solid #1a73e8;cursor:pointer}
+p{background:white;padding:12px;border-radius:6px;border-left:5px solid #fbbc04}
+</style>
+</head>
+<body>
+<h1>Student Career & Placement Tracker</h1>
+<p>Welcome to your career preparation journey!</p>
+<h2>My Preparation</h2>
+<ul>
+<li>Java Programming</li><li>HTML and CSS</li><li>Data Structures</li><li>Communication Skills</li><li>Aptitude Practice</li>
+</ul>
+<h2>My Career Goals</h2>
+<p>My goal is to become a Skilled Software Engineer.</p><p>I want to get placed in a good company.</p>
+<script>
+document.querySelectorAll('ul li').forEach(i=>{
+ i.addEventListener('click',()=>{
+  if(i.style.textDecoration==='line-through'){
+   i.style.textDecoration='none';i.style.opacity='1';i.style.background='#e8f0fe';
+  }else{
+   i.style.textDecoration='line-through';i.style.opacity='0.6';i.style.background='#d4edda';
+  }
+ });
+});
+</script>
+</body>
+</html>
